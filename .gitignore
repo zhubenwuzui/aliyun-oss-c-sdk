@@ -21,3 +21,4 @@ Debug
 Release
 !third_party/lib/Debug
 !third_party/lib/Release
+install_manifest.txt

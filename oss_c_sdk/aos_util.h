@@ -26,6 +26,10 @@ int aos_get_gmt_str_time(char datestr[AOS_MAX_GMT_TIME_LEN]);
  * urlEncode, else nonzero is returned.
  */
 int aos_url_encode(char *dest, const char *src, int maxSrcSize);
+/*
+  参照php版本的实现,不对'/'和'%'编码
+ */
+int aos_url_encode_for_resource_uri(char *dest, const char *src, int maxSrcSize);
 
 const char* aos_http_method_to_string(http_method_e method);
 
